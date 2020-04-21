@@ -1,10 +1,72 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
-	<title>My first homework</title>
+	<title>Cursor:HW1 - Git Comands</title>
+	<style type="text/css">
+		html {
+			margin: 0;
+			padding: 0;
+			background: rgb(212,5,204);
+			background: linear-gradient(90deg, rgba(212,5,204,0.5410539215686274) 0%, rgba(115,115,226,1) 35%, rgba(193,99,247,0.5270483193277311) 100%);			
+		}
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		h1, p {
+			font-family: Georgia, 'Times New Roman', Times, serif;
+			padding: 30px 0 30px 20px;
+			margin: 0 0 35px;
+			border-bottom: 5px dotted #e5e5e5;
+		}		
+
+		.style_for_text {
+			color: black;
+			font-size: 20px;
+			font-weight: bold;
+			
+		}
+
+		.style_for_commands {
+			color: #e5e5e5;
+			font-size: 24px;
+			font-weight: bold;
+			font-family: courier;
+		}
+
+
+
+	</style>
 </head>
 <body>
-	<h1> Git commands </h1>
+	<h1> Git commands: </h1>
+	<ul class="style_for_text"> 
+		<li><span class="style_for_commands">git config --global user.name ivan.podavan</span> - налаштовуємо ім*я людини, яка працює з репозиторієм, буде потім показуватись в комітах як ім*я автора комітів </li>
+		<li><span class="style_for_commands">git config --global user.name ivan.podavan@gmail.com</span> - налаштовуємо пошту, яка буде показуватись в інформації про коміти, які зробив автор </li>
+		<li><span class="style_for_commands">git init [назва репозиторію, без дужок]</span> - створюємо новий репозиторій </li>
+		<li><span class="style_for_commands">git status </span> - показує всі нові чи змінені файли, які потрібно зафіксувати (закомітити?) </li>
+		<li><span class="style_for_commands">git add [назва файлу, без цих дужок, так це важливо, бо я спочатку не зрозуміла]</span> - індексує файл, який потім будемо комітити </li>
+		<li><span class="style_for_commands">git commit [назва файлу]</span> - створюємо новий коміт, який включає всі поточні зміни проіндексованих файлів і файл логів  </li>
+		<li><span class="style_for_commands">git commit -m [назва файлу]</span> - створюємо новий коміт, який включає всі поточні зміни проіндексованих файлів і файл логів і <u> додаємо повідомлення</u> (краще це використовувати напевно) </li>
+		<li><span class="style_for_commands">git log </span> - можна подивитись зміни файлів проєкту</li>
+		<li><span class="style_for_commands">git checkout [назва вітки]</span> - переключаємось на вибрану вітку і обновлюємо робочу директорію до її стану </li>
+		<li><span class="style_for_commands">git branch [назва вітки]</span> - створюємо нову вітку </li>
+		<li><span class="style_for_commands">git branch -d [назва вітки]</span> - видаляємо вибрану вітку </li>
+		<li><span class="style_for_commands">git push </span> - посилаємо всі зміни з локальної папки на комп*ютері <strike>в космос</strike> на віддаленний репозиторій, щоб там збереглось</li>
+		<li><span class="style_for_commands">git push [назва віддаленного репозиторію] [назва вітки] </span> - те саме, тільки детальніше</li>
+		<li><span class="style_for_commands">git pull </span> - загружаємо історію із віддаленного репозиторію на свій комп*ютер і об*єднуємо її із тим, що маємо</li>
+		<li><span class="style_for_commands">git merge [назва вітки] </span> - вносить зміни із вибраної вітки в поточну вітку, допомагає з*эднувати вітки</li>
+		<li><span class="style_for_commands">git clone [url-посилання на репозиторій на гітхабі] </span> - скачує репозиторій разом із всіма змінами</li>
+	</ul>
+	<p class="style_for_text">В цьому файлі<span class="style_for_commands">.gitignore</span> записуються назви файлів, які будуть ігноруватись (зазвичай це якісь системні файли) </p>
+
+	<ul class="style_for_text"> 
+		<li><span class="style_for_commands">git revert </span> - ОХРАНА ОТМЄНА, відміняємо дії попереднього коміту, але не видаляємо його, а робимо новий із станом до помилкового коміту, типу "Антикоміт" </li>
+		<li><span class="style_for_commands">git reset</span> - відкочуємось до попереднього коміту з видаленням поточного ? Поки ще не дуже ясно, читала ось <a href="https://git-scm.com/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A0%D0%B0%D1%81%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5-%D1%82%D0%B0%D0%B9%D0%BD-reset">тут</a>  і ось <a href="https://www.atlassian.com/git/tutorials/undoing-changes/git-reset">тут</a></li>
+		<li><span class="style_for_commands">git cherry-pick </span> - використовуємо, коли потрібно взяти зміни, створені якимось комітом, і застосувати їх заново у вигляді новго коміту поверх поточної вітки </li>
+		<li><span class="style_for_commands">git rebase</span> - це автоматизованний cherry-pick, але для ланцюга комітів, наче переносимо вітку в інше місце: допомагає об*єднати зміни, які зроблені в одній гілці з іншою гілкою</li>
+		<li><span class="style_for_commands">git stash</span> - </li>
+	</ul>
+
 </body>
 </html>
