@@ -34,6 +34,10 @@
 			font-family: courier;
 		}
 
+		.colortext {
+			color: #5e005b;
+		}
+
 
 
 	</style>
@@ -47,7 +51,7 @@
 		<li><span class="style_for_commands">git status </span> - показує всі нові чи змінені файли, які потрібно зафіксувати (закомітити?) </li>
 		<li><span class="style_for_commands">git add [назва файлу, без цих дужок, так це важливо, бо я спочатку не зрозуміла]</span> - індексує файл, який потім будемо комітити </li>
 		<li><span class="style_for_commands">git commit [назва файлу]</span> - створюємо новий коміт, який включає всі поточні зміни проіндексованих файлів і файл логів  </li>
-		<li><span class="style_for_commands">git commit -m [назва файлу]</span> - створюємо новий коміт, який включає всі поточні зміни проіндексованих файлів і файл логів і <u> додаємо повідомлення</u> (краще це використовувати напевно) </li>
+		<li><span class="style_for_commands">git commit -m [назва файлу]</span> - те саме плюс <span class="colortext"> додаємо текст коментару </span></li>
 		<li><span class="style_for_commands">git log </span> - можна подивитись зміни файлів проєкту</li>
 		<li><span class="style_for_commands">git checkout [назва вітки]</span> - переключаємось на вибрану вітку і обновлюємо робочу директорію до її стану </li>
 		<li><span class="style_for_commands">git branch [назва вітки]</span> - створюємо нову вітку </li>
@@ -65,7 +69,7 @@
 		<li><span class="style_for_commands">git reset</span> - відкочуємось до попереднього коміту з видаленням поточного ? Поки ще не дуже ясно, читала ось <a href="https://git-scm.com/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A0%D0%B0%D1%81%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5-%D1%82%D0%B0%D0%B9%D0%BD-reset">тут</a>  і ось <a href="https://www.atlassian.com/git/tutorials/undoing-changes/git-reset">тут</a></li>
 		<li><span class="style_for_commands">git cherry-pick </span> - використовуємо, коли потрібно взяти зміни, створені якимось комітом, і застосувати їх заново у вигляді новго коміту поверх поточної вітки </li>
 		<li><span class="style_for_commands">git rebase</span> - це автоматизованний cherry-pick, але для ланцюга комітів, наче переносимо вітку в інше місце: допомагає об*єднати зміни, які зроблені в одній гілці з іншою гілкою</li>
-		<li><span class="style_for_commands">git stash</span> - </li>
+		<li><span class="style_for_commands">git stash</span> - фіксуємо стан нашої робочої директорії (змінені файли, які ми відслідковуємло і проіндексовані зміни) і зберігаємо їх в сховище незавершених змін, таким чином ми можемо в будь-який момент їх застовувати, зручно використовувати, коли ми хочемо змінити вітку при роботі і попрацювати над чимось іншим, при цьому не хочемо робити коміт?</li>
 	</ul>
 
 </body>
