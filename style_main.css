@@ -1,14 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Suez+One&display=swap');
 
-.button_task {
-    background-color: #1c87c9;
-    border-radius: 40px;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.button_task_container {
+    background: rgb(212,5,204);
+    background: linear-gradient(90deg, rgba(212,5,204,0.5410539215686274) 0%, rgba(115,115,226,1) 35%, rgba(193,99,247,0.5270483193277311) 100%);
+    border-radius: 20px;
     color: white;
     padding: 20px 34px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 20px;
     margin: 4px 2px;
     cursor: pointer;
 }
+
+.header_container {
+    background: rgb(212,5,204);
+    background: linear-gradient(90deg, rgba(212,5,204,0.5410539215686274) 0%, rgba(115,115,226,1) 35%, rgba(193,99,247,0.5270483193277311) 100%);
+    padding: 15px 0 15px 15px;
+    margin: 0 0 30px;
+    border-bottom: 5px dotted white;
+    font-size: 24px;
+}
+
+.footer_container {
+    background: rgb(212,5,204);
+    background: linear-gradient(90deg, rgba(212,5,204,0.5410539215686274) 0%, rgba(115,115,226,1) 35%, rgba(193,99,247,0.5270483193277311) 100%);
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+.background_container {
+    width:100%;
+    height:100%;
+    background-image: url("https://lh3.googleusercontent.com/proxy/wJjzn21Bpzbavq0nTxKLZ6tONWomsB9cC6O4caJCgtS78ADIIEKIcxE-26YX58gLp-nKquVxqvfT59Aa_s5YVTpv19tmcNmAa-LCx1kshtkh1uGt_icrVB36nf87Qw04TQM9-R_vxBAL7WxHgHU");
+    background-blend-mode: multiply;
+    background-color: #283144;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+}
+
