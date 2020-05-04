@@ -4,6 +4,15 @@
     font-family: 'Electrolize', sans-serif;
 }
 
+
+h1 {
+    margin: 0;
+    padding: 32px 0 32px;
+    text-align: center;
+    font-size: 32px;
+}
+/* Це я намагаюсь зробити задній фон із картинкою
+ */
 .background_container {
     width:100%;
     height:100%;
@@ -13,6 +22,9 @@
     background-size: cover;
     color: #fff;
 }
+
+/* Це код для верхнього меню запозичений з w3school*/
+
 .topnav {
     position: relative;
     background-color: #22186e;
@@ -67,21 +79,22 @@
         transform: none;
     }
 }
-
+/* Це я намагаюсь зробити форму по центру */
 .form_area {
-    width: 300px;
-    height: 400px;
+    width: 350px;
+    height: 650px;
     background: rgba(0,0,0,0.5);
-    padding: 40px;
     color: white;
     top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
     box-sizing: border-box;
-    border-radius: 10%;
+    border-radius: 20px;
+    padding: 90px 40px;
 }
 
+/* Це намагаюсь прикріпити аватарку */
 .avatar {
     width: 100px;
     height: 100x;
@@ -89,4 +102,163 @@
     position: absolute;
     top: -50px;
     left: calc(50% - 50px);
+}
+
+/* Це роблю стилі для тексту заголовків у формі */
+.form_area p {
+    margin: 0;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+.form_area input {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+/* Це роблю стилі для інпутів */
+
+.form_area input[type="text"] {
+    display: block;
+    width: 90%;
+    padding: 0 20px;
+    margin: 10px auto;
+    background: #fbcdcf;
+    line-height: 40px;
+    border-width: 0;
+    border-radius: 20px;
+}
+
+/* Це роблю стилі для радіобаттонів*/
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Створюю свої радіобаттони */
+.myradiobutton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* Додаю сірий колір при наведенні */
+.container:hover input ~ .myradiobutton {
+    background-color: #ccc;
+}
+
+/* Додаю синій колір, коли вибираємо радіобаттон */
+.container input:checked ~ .myradiobutton {
+    background-color: #22186e;
+}
+
+/* Стиль для кружочка */
+.container .myradiobutton:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+/* Це роблю стилі для чекбоксів*/
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #22186e;
+}
+
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+
+.container .checkmark:after {
+    left: 4px;
+    top: 3px;
+    width: 3px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+textarea {
+    display: block;
+    width: 90%;
+    padding: 0 20px;
+    margin: 10px auto;
+    background: #fbcdcf;
+    line-height: 40px;
+    border-width: 0;
+    border-radius: 20px;
+  }
+
+input[type="submit"]{
+    margin-top: 30px;
+    background: #fbcdcf;
+    color: black;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 8px;
+    border-radius: 20px;
+}
+
+/* Це стилі таблички */
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    margin: auto;
+    position: relative;
+    top: 1100px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 2%;
+}
+
+th, td {
+    padding: 15px;
 }
