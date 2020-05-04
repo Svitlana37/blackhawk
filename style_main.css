@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Patua+One&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Electrolize', sans-serif;
 }
 
+h1 {
+    font-family: 'Patua One', cursive;
+}
 .button_task_container {
     background: rgb(212,5,204);
     background: linear-gradient(90deg, rgba(212,5,204,0.5410539215686274) 0%, rgba(115,115,226,1) 35%, rgba(193,99,247,0.5270483193277311) 100%);
