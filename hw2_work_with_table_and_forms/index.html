@@ -19,7 +19,54 @@
             <a href="#search">Contacts</a>
             <a href="#about">About</a>
         </div>
-</div>
-
+    </div>
+    <h1>Table and form</h1>
+    <main>
+        <form class="form_area" action="">
+            <div>
+                <p><label for="first_name">First name:</label></p>
+                <input type="text" id="first_name" required placeholder="Please enter the your first name">
+            </div>
+            <div>
+                <p><label for="last_name">Last name:</label></p>
+                <input type="text" id="last_name" required placeholder="Please enter the your last name">
+            </div>
+            <p>What your gender?</p>
+            <label class="radio">
+                <input type="radio" value="male" name="gender" checked>
+                <span class="radio_button">Male</span>
+            </label>
+            <label class="radio">
+                <input type="radio" value="female" name="gender" checked>
+                <span class="radio_button">Female</span>
+            </label>
+            <label class="radio">
+                <input type="radio" value="other" name="gender" checked>
+                <span class="radio_button">I am not sure</span>
+            </label>
+            <p><textarea placeholder="Tell about yourself"></textarea></p>
+            <label for="city">Choose the city:</label>
+            <select id="city">
+                <option value="example" selected disabled>Choose the city</option>
+                <option value="Lviv">Tokyo</option>
+                <option value="Kyiv">Uhan</option>
+                <option value="Vinnytsia">London</option>
+            </select>
+            <p>Choose a language:</p>
+            <p>
+                <input type="checkbox" id="uk">
+                <label for="uk">Українська</label>
+            </p>
+            <p>
+                <input type="checkbox" id="ru">
+                <label for="ru">Русский</label>
+            </p>
+            <p>
+                <input type="checkbox" id="en">
+                <label for="en">English</label>
+            </p>
+            <input type="submit" value="Send">
+        </form>
+    </main>
 </body>
 </html>
