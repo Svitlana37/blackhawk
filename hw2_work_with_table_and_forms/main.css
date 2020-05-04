@@ -79,8 +79,14 @@
     position: absolute;
     transform: translate(-50%,-50%);
     box-sizing: border-box;
+    border-radius: 10%;
 }
 
 .avatar {
-    width: 1
+    width: 100px;
+    height: 100x;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
 }
