@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Cursor:HW1 - Git Comands</title>
+	<title>HW1 - Git Comands</title>
 	<style type="text/css">
 		html {
 			margin: 0;
@@ -38,11 +38,37 @@
 			color: #5e005b;
 		}
 
+		a {
+			display: inline-block;
+			padding: 8px 16px;
+			color: white;
+		}
 
+		a:hover {
+			background-color: #320c3f;
+			color: black;
+		}
 
+		.previous_button {
+			background-color: #f196ec;
+			color: black;
+		}
+
+		.next_button {
+			background-color: #a55bf1;
+			color: white;
+		}
+
+		.round {
+			border-radius: 30%;
+		}
 	</style>
 </head>
 <body>
+	<nav>
+		<a href="..">Previous</a> |
+		<a href="/css/">Next</a> |
+	</nav>
 	<h1> Git commands: </h1>
 	<ul class="style_for_text"> 
 		<li><span class="style_for_commands">git config --global user.name ivan.podavan</span> - налаштовуємо ім*я людини, яка працює з репозиторієм, буде потім показуватись в комітах як ім*я автора комітів </li>
