@@ -88,7 +88,7 @@ table {
     text-align: center;
     font-size: 14px;
     color: white;
-    margin: 35px auto;
+    margin: 40px auto;
     background: rgba(0,0,0,0.5);
     border-radius: 10px;
     border-collapse: collapse;
@@ -121,4 +121,51 @@ tr  {
 
 .name_text, .date_text, .filePDF_text, .last_seen_time_text {
     text-align: left;
+}
+
+#triangle_down_ico {
+    display: inline;
+    position: relative;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid white;
+    margin-left: 12px;
+    top: 12px;
+}
+
+
+.checkbox_header {
+
+}
+
+.checkbox_list {
+
+}
+
+.dots {
+    text-align: end;
+    padding-right: 14px;
+    cursor: pointer;
+}
+
+.dots_light {
+    color: white;
+}
+
+.inbox_ico {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.search_ico {
+    width: 90%;
+    margin: 0 20px ;
+    padding: 10px 5px 10px 30px;
+    background: rgb(87, 84, 84)  left 5px center url(img/search.png) no-repeat;
+    border: none;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.9);
 }
