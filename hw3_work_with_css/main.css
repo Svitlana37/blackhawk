@@ -168,11 +168,30 @@ input[type="search"]{
     color: #d7bcff;
 }
 
-.link_inbox_file {
-    display: inline-block;
-    position: relative;
-    padding-left: 25px;
+.inbox_ico {
+    width:18px;
+    height:18px
 }
-.link_inbox_file
+
+td a:link {
+    color: #d7bcff;
+    background-color: transparent;
+    text-decoration: none;
 }
+td a:visited {
+    color: #ff357d;
+    background-color: transparent;
+    text-decoration: none;
+}
+td a:hover {
+    color: #ff4ed8;
+    background-color: transparent;
+    text-decoration: underline;
+}
+td a:active {
+    color: #bc5bff;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
 
